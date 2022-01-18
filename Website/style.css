@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 600px;
+    height: 410px;
+}
+
+a img{
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+}
+button img{
+    padding: 0;
+    width: 60px;
+    height: 30px;
+    
+}
+.christmasButtonOne{
+    height: 40px;
+    width: 60px;
+    background-size: contain;
+    background-image: url(IMAGES/kaledos1.jfif);
+}
+.christmasButtonTwo{
+    height: 40px;
+    width: 60px;
+    background-size: contain;
+    background-image: url(IMAGES/kaledos2.jfif);
+}
+.christmasButtonThree{
+    height: 40px;
+    width: 60px;
+    background-size: contain;
+    background-image: url(IMAGES/kaledos3.jfif);
+}
+.christmasButtonFour{
+    height: 40px;
+    width: 60px;
+    background-size: contain;
+    background-image: url(IMAGES/kaledos4.jfif);
+}
+.christmasButtonFive{
+    height: 40px;
+    width: 60px;
+    background-size: contain;
+    background-image: url(IMAGES/kaledos5.jfif);
+}
+.christmasButtonSix{
+    height: 40px;
+    width: 60px;
+    background-size: contain;
+    background-image: url(IMAGES/kaledos6.jfif);
+}
+/* .christmasButtonSix{
+    height: 40px;
+    width: 60px;
+    background-size: contain;
+    background-image: url(IMAGES/kaledos6.jfif);
+} */
+
+li{
+    list-style: none;
+}
+
+.changing_img{
+    padding: 5px;
+    border-radius: 10px;
+
+}
+/* .text-image{
+    float:right;
+} */
+
+.button-area{
+    text-align: center;
+    margin: 5px;
+}
+button{
+    padding: 8px 30px;
+    font-size: 20px;
+}
+
+#atvirukas{
+    /* display: inline; */
+    border: 2px solid black;
+    height: 420px;
+    width: 1200px;
+    margin: 40px auto;
+}
