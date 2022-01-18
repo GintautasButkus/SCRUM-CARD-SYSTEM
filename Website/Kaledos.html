@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kaledos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Kaledos</h1>
+        <ul>
+            <li> <a href="index.html">Pradinis</a></li>
+            <li> <a href="Velykos.html">Velykos</a></li>
+            <li> <a href="Gimtadienis.html">Gimtadienis</a></li>
+            <li> <a href="Atostogos.html">Atostogos</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="atvirukas" id="atvirukas">
+            <img id="img-area" class="changing_img" src="IMAGES/kaledos1.jfif" alt="kaledos">
+            <!-- <img id="img-area" class="changing_img text-image" src="IMAGES/lined-text.jpg" alt="tekstas"> -->
+        </div>
+        <div class="button-area">
+            <h3>Pasirinkite paveikslėlį</h3>
+            <button onclick="kaledosBePaveikslelio()">nuimti paveikslėlį</button>
+            <button  class="christmasButtonOne" onclick="kaledosVienas()"></button>
+            <button class="christmasButtonTwo" onclick="kaledosDu()"></button>
+            <button class="christmasButtonThree" onclick="kaledosTrys()"></button>
+            <button class="christmasButtonFour" onclick="kaledosKeturi()"></button>
+            <button class="christmasButtonFive" onclick="kaledosPenki()"></button>
+            <button class="christmasButtonSix" onclick="kaledosSesi()"></button>
+        </div>
+        <div class="button-area">
+            <h3>Paveikslėlio pozicija</h3>
+            <button onclick="kaledosKaireje()">kairėje</button>
+            <button onclick="kaledosDesineje()">dešinėje</button>
+        </div>
+
+
+
+        <div class="button-area">
+            <label for="favcolor"><h3>Pasirinkite atviruko foną</h3></label>
+            <input type="color" id="colorInputColor" name="favcolor" value="#ff0000">
+            <input type="button" id="colorButton"  value="Click to change Color"
+            onclick="changeColor()">
+        </div>
+ 
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
