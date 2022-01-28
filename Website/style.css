@@ -1,92 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
+body{
+height: 20vh;
 }
-img{
-    width: 600px;
-    height: 410px;
+
+header{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.element{
+    position: relative;
+    bottom: 50px;
+    left: 32px;
+    color: black;
+    font-size: 2.5em;
+    width: 373px;
+    text-align: center;
+    background: rgba(205, 199, 202, 0.8) 
 }
 
 a img{
-    width: 600px;
-    height: 400px;
+    width: 55vh;
+    height: 34vh;
     padding: 10px;
-}
-button img{
-    padding: 0;
-    width: 60px;
-    height: 30px;
+    border-radius: 20px;
+    border: black 2px solid;
     
 }
+
+img{
+    margin-bottom: -30px;
+    margin-left: 20px;
+
+}
+
+.text{
+    text-align: justify;
+    font-size: 13pt;
+}
+
 .christmasButtonOne{
-    height: 40px;
-    width: 60px;
-    background-size: contain;
+    margin: -10px;
     background-image: url(IMAGES/kaledos1.jfif);
 }
 .christmasButtonTwo{
-    height: 40px;
-    width: 60px;
-    background-size: contain;
     background-image: url(IMAGES/kaledos2.jfif);
 }
 .christmasButtonThree{
-    height: 40px;
-    width: 60px;
-    background-size: contain;
     background-image: url(IMAGES/kaledos3.jfif);
 }
 .christmasButtonFour{
-    height: 40px;
-    width: 60px;
-    background-size: contain;
     background-image: url(IMAGES/kaledos4.jfif);
 }
 .christmasButtonFive{
-    height: 40px;
-    width: 60px;
-    background-size: contain;
     background-image: url(IMAGES/kaledos5.jfif);
 }
 .christmasButtonSix{
-    height: 40px;
-    width: 60px;
-    background-size: contain;
     background-image: url(IMAGES/kaledos6.jfif);
-}
-/* .christmasButtonSix{
-    height: 40px;
-    width: 60px;
-    background-size: contain;
-    background-image: url(IMAGES/kaledos6.jfif);
-} */
-
-li{
-    list-style: none;
-}
-
-.changing_img{
-    padding: 5px;
-    border-radius: 10px;
-
-}
-/* .text-image{
-    float:right;
-} */
-
-.button-area{
-    text-align: center;
-    margin: 5px;
-}
-button{
-    padding: 8px 30px;
-    font-size: 20px;
-}
-
-#atvirukas{
-    /* display: inline; */
-    border: 2px solid black;
-    height: 420px;
-    width: 1200px;
-    margin: 40px auto;
 }
