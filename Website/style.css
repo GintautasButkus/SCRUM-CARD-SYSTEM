@@ -1,6 +1,4 @@
-body{
-    height: 20vh;
-    }
+
 
     header{
         text-align: center;
@@ -19,23 +17,19 @@ body{
     }
 
     img{
+        text-align: center;
         margin-bottom: -30px;
         margin-left: 20px;
     
     }
 
 a img{
-    width: 55vh;
-    height: 34vh;
+    width: 397px;
+    height: 240px;
     padding: 10px;
     border-radius: 20px;
     border: black 2px solid;
     
-}
-
-.text{
-    text-align: justify;
-    font-size: 13pt;
 }
 
 button img{
@@ -106,7 +100,7 @@ li{
     margin: 5px;
 }
 button{
-    padding: 8px 30px;
+    /* padding: 8px 30px; */
     font-size: 20px;
 }
 
@@ -115,5 +109,5 @@ button{
     border: 2px solid black;
     height: 420px;
     width: 1200px;
-    margin: 40px auto;
+    /* margin: 40px auto; */
 }
