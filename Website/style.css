@@ -49,37 +49,37 @@ button img{
     height: 40px;
     width: 60px;
     background-size: contain;
-    background-image: url(IMAGES/kaledos1.jfif);
+    background-image: url(IMAGES/Christmas1.jpg);
 }
 .christmasButtonTwo{
     height: 40px;
     width: 60px;
     background-size: contain;
-    background-image: url(IMAGES/kaledos2.jfif);
+    background-image: url(IMAGES/Christmas2.jpg);
 }
 .christmasButtonThree{
     height: 40px;
     width: 60px;
     background-size: contain;
-    background-image: url(IMAGES/kaledos3.jfif);
+    background-image: url(IMAGES/Christmas3.jpg);
 }
 .christmasButtonFour{
     height: 40px;
     width: 60px;
     background-size: contain;
-    background-image: url(IMAGES/kaledos4.jfif);
+    background-image: url(IMAGES/Christmas4.jpg);
 }
 .christmasButtonFive{
     height: 40px;
     width: 60px;
     background-size: contain;
-    background-image: url(IMAGES/kaledos5.jfif);
+    background-image: url(IMAGES/Christmas5.jpg);
 }
 .christmasButtonSix{
     height: 40px;
     width: 60px;
     background-size: contain;
-    background-image: url(IMAGES/kaledos6.jfif);
+    background-image: url(IMAGES/Christmas6.jpg);
 }
 /* .christmasButtonSix{
     height: 40px;
@@ -94,7 +94,10 @@ li{
 
 .changing_img{
     padding: 5px;
+    margin: 0;
     border-radius: 10px;
+    height: 415px;
+    width: 550px;
 
 }
 /* .text-image{
@@ -110,7 +113,7 @@ button{
     font-size: 20px;
 }
 
-#atvirukas{
+#postcard{
     /* display: inline; */
     border: 2px solid black;
     height: 420px;

@@ -3,59 +3,59 @@ var backgroundIm = document.getElementById("atvirukas");
 var fonas = document.getElementById("fonas");
 
 
-//  Kaledos 
+//  Christmas 
 
 
 
-// Kaledos paveikslelis
-function kaledosBePaveikslelio(){
-    img.src='IMAGES/kaledos3.jfif';
+// Christmas Images
+function ChristmasWithoutImage(){
+    img.src='IMAGES/Christmas1.jpg';
     img.style.opacity = "0";
 }
-function kaledosVienas(){
-    img.src='IMAGES/kaledos1.jfif';
+function ChristmasOne(){
+    img.src='IMAGES/Christmas1.jpg';
     img.style.opacity = "1";
 }
-function kaledosDu(){
-    img.src='IMAGES/kaledos2.jfif';
+function ChristmasTwo(){
+    img.src='IMAGES/Christmas2.jpg';
     img.style.opacity = "1";
 }
-function kaledosTrys(){
-    img.src='IMAGES/kaledos3.jfif';
+function ChristmasThree(){
+    img.src='IMAGES/Christmas3.jpg';
     img.style.opacity = "1";
 }
-function kaledosKeturi(){
-    img.src='IMAGES/kaledos4.jfif';
+function ChristmasFour(){
+    img.src='IMAGES/Christmas4.jpg';
     img.style.opacity = "1";
 }
-function kaledosPenki(){
-    img.src='IMAGES/kaledos5.jfif';
+function ChristmasFive(){
+    img.src='IMAGES/Christmas5.jpg';
     img.style.opacity = "1";
     console.log("veikia5");
 }
-function kaledosSesi(){
+function ChristmasSix(){
     console.log("veikia6");
-    img.src='IMAGES/kaledos6.jfif';
+    img.src='IMAGES/Christmas6.jpg';
     img.style.opacity = "1";
 }
 
-// Kaledos paveikslelio pozicija
-function kaledosDesineje(){
+// Christmas Image Position
+function ChristmasRight(){
     img.style.float = "right";
 }
-function kaledosKaireje(){
+function ChristmasLeft(){
     img.style.float = "left";
 }
 
 
-// Kaledos atviruko fonas
+// Christmas postcard background
 function changeColor(){
     let color = document.getElementById('colorInputColor').value;
     backgroundIm.style.backgroundColor = color;
 }
 
 
-// Gimtadienis 
+// Birthday
 
 function gimtadienisVienas(){
     img.src='IMAGES/gimtadienis1.jfif';
@@ -73,7 +73,7 @@ function gimtadienisTrys(){
 
 
 
-// Velykos 
+// Easter
 
 function velykosVienas(){
     img.src='IMAGES/velykos1.jfif';
@@ -88,7 +88,7 @@ function velykosTrys(){
 
 
 
-// Atostogos
+// Vacation
 
 function atostogosVienas(){
     img.src='IMAGES/atostogos1.jfif';
