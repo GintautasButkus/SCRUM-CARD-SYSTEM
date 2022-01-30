@@ -8,42 +8,42 @@ var fonas = document.getElementById("fonas");
 
 
 // Christmas Images
-function ChristmasWithoutImage(){
+function christmasWithoutImage(){
     img.src='IMAGES/Christmas1.jpg';
     img.style.opacity = "0";
 }
-function ChristmasOne(){
+function christmasOne(){
     img.src='IMAGES/Christmas1.jpg';
     img.style.opacity = "1";
 }
-function ChristmasTwo(){
+function christmasTwo(){
     img.src='IMAGES/Christmas2.jpg';
     img.style.opacity = "1";
 }
-function ChristmasThree(){
+function christmasThree(){
     img.src='IMAGES/Christmas3.jpg';
     img.style.opacity = "1";
 }
-function ChristmasFour(){
+function christmasFour(){
     img.src='IMAGES/Christmas4.jpg';
     img.style.opacity = "1";
 }
-function ChristmasFive(){
+function christmasFive(){
     img.src='IMAGES/Christmas5.jpg';
     img.style.opacity = "1";
     console.log("veikia5");
 }
-function ChristmasSix(){
+function christmasSix(){
     console.log("veikia6");
     img.src='IMAGES/Christmas6.jpg';
     img.style.opacity = "1";
 }
 
 // Christmas Image Position
-function ChristmasRight(){
+function christmasRight(){
     img.style.float = "right";
 }
-function ChristmasLeft(){
+function christmasLeft(){
     img.style.float = "left";
 }
 

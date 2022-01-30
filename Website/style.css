@@ -1,41 +1,42 @@
 body{
-    height: 20vh;
-    }
+
+        background: linear-gradient(to bottom, #ffffff 0%, #000000 200%);
+    
+}
 
     header{
         text-align: center;
         padding: 20px;
     }
 
+   
+
     .element{
         position: relative;
-        bottom: 50px;
-        left: 32px;
+        bottom: 80px;
+        left: 0px;
         color: black;
         font-size: 2.5em;
-        width: 373px;
+        width: 366px;
         text-align: center;
-        background: rgba(205, 199, 202, 0.8) 
+        background: rgba(205, 199, 202, 0.8);
+        display:block;
+        margin: 0 auto;
     }
 
     img{
-        margin-bottom: -30px;
-        margin-left: 20px;
-    
+      display:block;
+      margin: 0 auto;
+
     }
 
 a img{
-    width: 55vh;
-    height: 34vh;
+    width: 390px;
+    height: 233px;
     padding: 10px;
     border-radius: 20px;
     border: black 2px solid;
-    
-}
-
-.text{
-    text-align: justify;
-    font-size: 13pt;
+    text-align: center;
 }
 
 button img{
@@ -45,7 +46,7 @@ button img{
     
 }
 .christmasButtonOne{
-    margin: -10px;
+    /* margin: -10px; */
     height: 40px;
     width: 60px;
     background-size: contain;
@@ -93,8 +94,12 @@ li{
 }
 
 .changing_img{
+<<<<<<< HEAD
     padding: 5px;
     margin: 0;
+=======
+    /* padding: 5px; */
+>>>>>>> 27d1acb5efd2b84e7041b54bcffdd837318ee0b2
     border-radius: 10px;
     height: 415px;
     width: 550px;
@@ -106,10 +111,10 @@ li{
 
 .button-area{
     text-align: center;
-    margin: 5px;
+    /* margin: 5px; */
 }
 button{
-    padding: 8px 30px;
+    /* padding: 8px 30px; */
     font-size: 20px;
 }
 
@@ -118,5 +123,5 @@ button{
     border: 2px solid black;
     height: 420px;
     width: 1200px;
-    margin: 40px auto;
+    /* margin: 40px auto; */
 }
