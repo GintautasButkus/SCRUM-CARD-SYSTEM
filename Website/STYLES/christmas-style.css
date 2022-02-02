@@ -1,0 +1,198 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* ******** NAVBAR******** */
+.nav-link{
+   max-width: 100%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+   color: rgb(223, 223, 223) !important;
+   font-size: 14px;
+}
+
+.navigation{
+    position: relative;
+    left: 0;
+    background: rgb(95,8,152);
+    background: linear-gradient(90deg, rgba(95,8,152,1) 0%, rgba(87,87,241,1) 65%, rgba(7,216,255,1) 91%);  
+    text-decoration: none;
+    color: white;
+}
+
+/*  ****** LEFT MENU ************** */
+.left{
+    background-color: rgb(41, 41, 41);
+    max-height: 100%;
+}
+
+/* ******** MAIN ROW ************** */
+.main-row{
+    height: 100%;
+}
+
+html, body{
+    height: 96.22%; 
+    margin: 0; 
+    padding: 0;
+}
+
+/* ******* DECORATIONS ********************* */
+
+.christmasButtonOne{
+    display: block;
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/CHRISTMAS-IMG/xmass1.png);
+}
+.christmasButtonTwo{
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/CHRISTMAS-IMG/xmass2.png);
+}
+.christmasButtonThree{
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/CHRISTMAS-IMG/xmass3.png);
+}
+.christmasButtonFour{
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/CHRISTMAS-IMG/xmass4.png);
+}
+.christmasButtonFive{
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/CHRISTMAS-IMG/xmass5.png);
+}
+.christmasButtonSix{
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/CHRISTMAS-IMG/xmass6.png);
+}
+
+.christmasButtonSeven{
+    height: 40px;
+    width: 60px;
+    background-size: contain;
+    background-image: url(../IMAGES/CHRISTMAS-IMG/xmass7.png);
+}
+
+li{
+    list-style: none;
+}
+
+.changing_img{
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.button-area{
+    text-align: left;
+    margin: 5px;
+}
+
+.button-area p{
+    color: #d6d6d6;
+}
+.button-area hr{
+    color: #d6d6d6; 
+}
+
+.button-deco button{
+    width: 90px;
+    height: 90px;
+    padding: 4px;
+    border-radius: 12px;
+    border: none;
+    opacity: 0.7;    
+}
+
+.button-deco button:hover{
+    opacity: 1;
+    box-shadow: rgba(221, 221, 221, 0.35) 0px 5px 15px;
+    border: solid rgb(82, 82, 82) 2px;
+}
+
+.deco-row{
+    height: 100px;
+    padding-bottom: 50px;
+}
+
+/* ************ POSITION **************************************** */
+
+.position{
+    width: 200px;
+    font-size: 25px;
+    border: none;
+    border-radius: 12px;
+    color: rgb(41, 41, 41);
+    opacity: 0.7;
+}
+
+.position:hover{
+    opacity: 1;
+    box-shadow: rgba(221, 221, 221, 0.35) 0px 5px 15px;
+}
+
+/* ******* BACKGROUND COLOR *********************************** */
+.palette{
+    height: 40px;
+    font-size: 18px;
+}
+
+.colors{
+    background: none;
+}
+
+.apply{
+    width: 120px;
+    height: 30px;
+    font-size: 16px;
+}
+
+
+/* ************ RIGHT SIDE - CARD VIEW **************** */
+.right-view{
+    padding-top: 20px;
+    background: rgb(41,41,41);
+    background: radial-gradient(circle, rgba(41,41,41,1) 36%, rgba(104,104,104,1) 46%, rgba(174,174,174,1) 66%, rgba(216,216,216,1) 83%, rgba(255,255,255,1) 100%);
+}
+
+.frame{
+    height: 90%;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 200px;
+    
+}
+.snap-col{
+    display: flex;
+    justify-content: center;
+}
+
+.snapshot{
+    width: 92.75%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 7px;
+    border:none;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    background: rgb(3, 122, 202);
+}
+
+.snapshot:hover{
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
+}
+
+.snapshot:active{
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
+    color: grey;
+    background: rgb(1, 67, 110);
+}

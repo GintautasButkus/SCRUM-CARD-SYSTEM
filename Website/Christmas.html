@@ -1,62 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Christmas</title>
-</head>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="STYLES/christmas-style.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <title>Christmas</title>
+  </head>
 
-<body>
-    <header>
-        <h1>Christmas</h1>
-        <ul>
-            <li> <a href="index.html">Home Page</a></li>
-            <li> <a href="Easter.html">Easter</a></li>
-            <li> <a href="Birthday.html">Birthday</a></li>
-            <li> <a href="Vacation.html">Vacation</a></li>
-        </ul>
-    </header>
-    <main>
-        <div class="postcard" id="postcard">
-            <img id="img-area" class="changing_img" src="IMAGES/Christmas1.jpg" alt="Christmas">
-            <!-- <img id="img-area" class="changing_img text-image" src="IMAGES/lined-text.jpg" alt="tekstas"> -->
-        </div>
-        <div class="button-area">
-            <h3>Choose Image</h3>
-            <button onclick="christmasWithoutImage()">Remove Image</button>
-            <button  class="christmasButtonOne" onclick="christmasOne()"></button>
-            <button class="christmasButtonTwo" onclick="christmasTwo()"></button>
-            <button class="christmasButtonThree" onclick="christmasThree()"></button>
-            <button class="christmasButtonFour" onclick="christmasFour()"></button>
-            <button class="christmasButtonFive" onclick="christmasFive()"></button>
-            <button class="christmasButtonSix" onclick="christmasSix()"></button>
-            <div class="container" >
-            <div class="mb-3">
-                <label for="formFileSm" class="form-label">Choose your own Image</label>
-                <input class="form-control form-control-sm" id="formFileSm" type="file">
+  <body>
+    <!-- ********* NAVBAR ************** -->
+    <div class="container-fluid navigation ">
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>       
+        </button>               
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active mx-2">
+             <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active mx-2">
+             <a class="nav-link" href="Velykos.html">Easter</a>
+            </li>
+            <li class="nav-item active mx-2">
+             <a class="nav-link" href="Gimtadienis.html">Birthday</a>
+            </li>
+            <li class="nav-item active mx-2">
+             <a class="nav-link" href="Astostogos.html">Holiday</a>
+            </li>
+          </ul>
+          </div>
+      </nav>
+    </div>
+        
+    
+   <main class="main-row">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-lg-4 left">
+            <div class="button-area">
+              <hr>
+              <p><i class="fa fa-picture-o" aria-hidden="true"></i> Select decoration</p>
+              <!-- ***** DECORATIONS ******* -->
+              <div class="row deco-row">
+                <div class="button-deco col-3">
+                  <button onclick="xmassNone()">none</button>
+                </div>
+                <div class="button-deco col-3">
+                  <button class="christmasButtonOne" onclick="xmass1()"></button>
+                </div>
+                <div class="button-deco col-3">
+                  <button class="christmasButtonTwo" onclick="xmass2()"></button>
+                </div>
+                <div class="button-deco col-3">
+                  <button class="christmasButtonThree" onclick="xmass3()"></button>
+                </div>
               </div>
+              <div class="row deco-row">
+                <div class="button-deco col-3">
+                  <button class="christmasButtonSeven" onclick="xmass7()"></button>
+                </div>
+                <div class="button-deco col-3">
+                  <button class="christmasButtonSix" onclick="xmass6()"></button>
+                </div>
+                <div class="button-deco col-3">
+                  <button class="christmasButtonFive" onclick="xmass5()"></button>
+                </div>
+                <div class="button-deco col-3">
+                  <button class="christmasButtonFour" onclick="xmass4()"></button>
+                </div>
               </div>
+                    
+                    
+              <!-- ********* SELECT OWN DECORATION *************** -->
+              <div class="row" >
+                <hr>
+                <p><i class="fa fa-picture-o" aria-hidden="true"></i> Select your own decoration</p>
+                <div class="col-8">
+                  <input class="form-control form-control-sm" id="formFileSm" type="file">
+                </div>
+                <div class="col-4">
+                  <button class="apply position" onclick="apply()">Apply</button>
+                </div>
+              </div>
+              <!-- *********** POSITION *************** -->
+              <div class="button-area">
+                <hr>
+                <p><i class="fa fa-sliders" aria-hidden="true"></i>  Decoration position</p>
+                <div class="row">
+                  <div class="col-6">
+                    <button class="position" onclick="left()"><i class="fa fa-align-left" aria-hidden="true"></i></button>
+                  </div>
+                  <div class="col-6">
+                    <button class="position" onclick="right()"><i class="fa fa-align-right" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+                <!-- ********** BACKGROUND *************** -->
+              <div class="button-area color ">
+                  <hr>
+                  <p><i class="fa fa-paint-brush" aria-hidden="true"></i> Background</p>
+                  <div class="row ">
+                    <div class="col-6 pb-2">
+                      <input class="position palette colors" type="color" id="colorInputColor" name="favcolor" value="#ff0000">
+                    </div>
+                    <div class="col-6">
+                      <input class="position palette background" type="button" id="colorButton"  value="Change Color" onclick="changeColor()">
+                   </div>
+                   <hr>
+                </div>
+              </div>     
+            </div>
+          </div>
+        
+            <!-- **************** RIGHT SIDE - CARD VIEW *************************** -->
+        <div class="col-lg-8 right-view">
+          <div class="row frame mx-auto">
+            <div class="col-12 atvirukas" id="atvirukas">
+              <img id="img-area" class="changing_img" src="IMAGES/CHRISTMAS-IMG/xmass7.png" alt="kaledos">
+            </div>
+          </div>
+          <div class="row mx-auto">
+            <div class="col-12 snap-col ">
+              <button class="snapshot" onclick=""><i class="fa fa-camera" aria-hidden="true"></i> Take a snap</button>
+            </div>
+          </div>
         </div>
-        <div class="button-area">
-            <h3>Image position</h3>
-            <button onclick="christmasLeft()">left</button>
-            <button onclick="christmasRight()">right</button>
-        </div>
-
-
-
-        <div class="button-area">
-            <label for="favcolor"><h3>Select Postcard background</h3></label>
-            <input type="color" id="colorInputColor" name="favcolor" value="#ff0000">
-            <input type="button" id="colorButton"  value="Click to change Color"
-            onclick="changeColor()">
-        </div>
- 
-
-        <script src="script.js"></script>
+      </div>
+      </div>
     </main>
-</body>
+
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+    <script src="SCRIPTS/christmas-script.js"></script>
+  </body>
 </html>
