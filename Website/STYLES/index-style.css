@@ -1,0 +1,45 @@
+.container-fluid{
+      background-color: rgb(221, 221, 221);
+      height: 100vh;
+}
+
+.select{
+    text-align: center;
+    font-family: 'Licorice', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 8rem; 
+    text-shadow: 1px 1px 3px rgb(165, 165, 165), 0 0 25px rgb(165, 165, 165), 0 0 3px rgb(165, 165, 165);
+}
+
+.image-div{
+    height: 59vh;
+}
+
+.image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    box-shadow: rgba(50, 50, 93, 0.4) 0px 30px 60px -12px, rgba(0, 0, 0, 0.4) 0px 18px 36px -18px;
+}
+
+
+.image-div img:hover{
+    height: 102%;
+    width: 102%;
+    object-fit: cover;
+    opacity: 1;
+    box-shadow: none;
+}
+
+.image-div img:active{
+    height: 101%;
+    width: 101%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+.image-row{
+    width: 100%;
+}
+
