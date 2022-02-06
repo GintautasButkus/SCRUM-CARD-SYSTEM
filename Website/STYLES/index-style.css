@@ -1,21 +1,28 @@
-.container-fluid{
-      background-color: rgb(221, 221, 221);
-      height: 100vh;
+.cont{
+    background-color: rgb(236, 236, 236);
+}
+
+.image-row{
+    background-color: rgb(236, 236, 236);
 }
 
 .select{
     text-align: center;
     font-family: 'Licorice', cursive;
     color: rgb(255, 255, 255);
-    font-size: 8rem; 
+    font-size: 6rem; 
     text-shadow: 1px 1px 3px rgb(165, 165, 165), 0 0 25px rgb(165, 165, 165), 0 0 3px rgb(165, 165, 165);
 }
 
 .image-div{
-    height: 59vh;
+    padding-top: 10px;
+    height: 480px;
+    background-color: rgb(236, 236, 236);
 }
 
 .image-div img{
+    display: block;
+    margin: auto;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -23,10 +30,22 @@
     box-shadow: rgba(50, 50, 93, 0.4) 0px 30px 60px -12px, rgba(0, 0, 0, 0.4) 0px 18px 36px -18px;
 }
 
+.image-div p{
+    font-size: 35px;
+    margin-top: -50px;
+    opacity: 1;
+}
+
+.image-div p:hover{
+    font-size: 35px;
+    margin-top: -40px;
+    opacity: 1;
+    color: rgb(78, 78, 78);
+}
+
 
 .image-div img:hover{
     height: 102%;
-    width: 102%;
     object-fit: cover;
     opacity: 1;
     box-shadow: none;
@@ -35,11 +54,7 @@
 .image-div img:active{
     height: 101%;
     width: 101%;
-    object-fit: cover;
+    object-fit: contain;
     opacity: 1;
-}
-
-.image-row{
-    width: 100%;
 }
 
