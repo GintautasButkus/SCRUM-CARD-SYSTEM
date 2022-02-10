@@ -1,0 +1,65 @@
+
+.container-fluid{
+      background-color: rgb(221, 221, 221);
+      height: 100vh;
+}
+
+.select{
+    text-align: center;
+    font-family: 'Licorice', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 8rem; 
+    padding-bottom: 10px;
+    text-shadow: 1px 1px 3px rgb(165, 165, 165), 0 0 25px rgb(165, 165, 165), 0 0 3px rgb(165, 165, 165);
+}
+
+.image-div{
+    height: 59vh;
+    margin-bottom: 2vh;
+}
+
+.image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    box-shadow: rgba(50, 50, 93, 0.4) 0px 30px 60px -12px, rgba(0, 0, 0, 0.4) 0px 18px 36px -18px;
+}
+
+
+.image-div img:hover{
+    height: 102%;
+    width: 102%;
+    object-fit: cover;
+    opacity: 1;
+    box-shadow: none;
+}
+
+.image-div img:active{
+    height: 101%;
+    width: 101%;
+    object-fit: cover;
+    opacity: 1;
+}
+
+/* .image-row{
+    width: 100%;
+} */
+
+/* prideti nauji */
+.element{
+    position: relative;
+    bottom: 80px;
+    left: 0px;
+    color: black;
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+    background: rgba(205, 199, 202, 0.7);
+    display:block;
+    margin: 0 auto;
+}
+
+
+
+
