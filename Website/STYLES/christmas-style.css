@@ -196,3 +196,19 @@ li{
     color: grey;
     background: rgb(1, 67, 110);
 }
+
+
+.myButton {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .submit {
+      border-radius: 10px;
+      opacity: 70%;
+  }
+  .submit:hover {
+      opacity: 100%;
+  }

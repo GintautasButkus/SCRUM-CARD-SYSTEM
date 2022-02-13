@@ -53,3 +53,22 @@ function changeColor(){
     let color = document.getElementById('colorInputColor').value;
     backgroundIm.style.backgroundColor = color;
 }
+
+
+
+// Christmas own decoration
+
+function previewFile() {
+    const preview = document.getElementById('img-area');
+    const file = document.getElementById("formFileSm").files[0];
+    const btn = document.getElementById('apply');
+    const reader = new FileReader();
+  
+    btn.addEventListener("click", function () {
+      preview.src = reader.result;
+    }, false);
+  
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+   }
