@@ -82,12 +82,6 @@ button img{
     background-size: contain;
     background-image: url(IMAGES/Christmas6.jpg);
 }
-/* .christmasButtonSix{
-    height: 40px;
-    width: 60px;
-    background-size: contain;
-    background-image: url(IMAGES/kaledos6.jfif);
-} */
 
 li{
     list-style: none;
@@ -119,5 +113,4 @@ button{
     border: 2px solid black;
     height: 420px;
     width: 1200px;
-    /* margin: 40px auto; */
 }
