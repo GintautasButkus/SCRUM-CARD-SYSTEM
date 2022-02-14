@@ -79,12 +79,14 @@
                 <hr>
                 <p><i class="fa fa-picture-o" aria-hidden="true"></i> Select your own decoration</p>
                 <div class="col-8">
-                  <input class="form-control form-control-sm" id="formFileSm" type="file">
+                  <input class="form-control form-control-sm" id="formFileSm" type="file" onchange="previewFile()">
                 </div>
                 <div class="col-4">
-                  <button class="apply position" onclick="apply()">Apply</button>
+                  <button type="button"  value="Apply" id="apply" class="submit">Apply</button>
                 </div>
               </div>
+
+
               <!-- *********** POSITION *************** -->
               <div class="button-area">
                 <hr>
@@ -98,6 +100,8 @@
                   </div>
                 </div>
               </div>
+
+
                 <!-- ********** BACKGROUND *************** -->
               <div class="button-area color ">
                   <hr>
@@ -116,18 +120,18 @@
           </div>
         
             <!-- **************** RIGHT SIDE - CARD VIEW *************************** -->
-        <div class="col-lg-8 right-view">
-          <div class="row frame mx-auto">
-            <div class="col-12 atvirukas" id="atvirukas">
-              <img id="img-area" class="changing_img" src="IMAGES/CHRISTMAS-IMG/xmass7.png" alt="kaledos">
+          <div class="col-lg-8 right-view">
+            <div class="row frame mx-auto">
+              <div class="col-12 atvirukas" id="atvirukas">
+                <img id="img-area" class="changing_img" src="IMAGES/CHRISTMAS-IMG/xmass7.png" alt="kaledos">
+              </div>
             </div>
+            <!-- <div class="row mx-auto">
+              <div class="col-12 snap-col ">
+                <button class="snapshot" onclick=""><i class="fa fa-camera" aria-hidden="true"></i> Take a snap</button>
+             </div>
+            </div> -->
           </div>
-          <div class="row mx-auto">
-            <div class="col-12 snap-col ">
-              <button class="snapshot" onclick=""><i class="fa fa-camera" aria-hidden="true"></i> Take a snap</button>
-            </div>
-          </div>
-        </div>
       </div>
       </div>
     </main>
@@ -141,6 +145,8 @@
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
 
+    <!-- Javascript for user upload image -->
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
