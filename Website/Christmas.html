@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="STYLES/christmas-style.css">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <title>Christmas</title>
@@ -127,38 +132,32 @@
 
         <!-- **************** RIGHT SIDE - CARD VIEW *************************** -->
 
-        <div class="col-lg-8 right-view">
-          <div class="row frame mx-auto">
-            <div class="col-12 atvirukas" id="atvirukas">
-              <img id="img-area" class="changing_img" src="IMAGES/CHRISTMAS-IMG/xmass7.png" alt="kaledos">
+                <div class="col-lg-8 right-view">
+                  <div class="row frame mx-auto">
+                      <div class="col-12 atvirukas" id="atvirukas">
 
-              <textarea class="col-6 left-view" id="text" rows="20"></textarea>
-              <!-- <button>Submit</button> -->
+                        
+                        <img id="img-area" class="changing_img" src="IMAGES/CHRISTMAS-IMG/xmass7.png" alt="kaledos">
+                        <textarea class="col-6 left-view" style="overflow:hidden" id="text" maxlength="400" rows="11"></textarea>
+                      
+                      </div>
 
+                  </div>                  
+                
+
+
+          
+                  <div class="row mx-auto">
+                    <div class="col-12 snap-col ">
+                      <button class="snapshot" onclick=""><i class="fa fa-camera" aria-hidden="true"></i> Take a snap</button>
+                  </div>
+                </div>
 
             </div>
 
-          </div>
 
-
-          <!-- **************** LEFT SIDE - CARD VIEW **************** -->
-
-
-          <!-- <form name="text" class="form">
-            <input type="text" name="name" class="form-class" id="text-input">
-            <button>Submit</button>
-          </form> -->
-
-
+        
         </div>
-
-
-        <!-- <div class="row mx-auto">
-              <div class="col-12 snap-col ">
-                <button class="snapshot" onclick=""><i class="fa fa-camera" aria-hidden="true"></i> Take a snap</button>
-             </div>
-            </div> -->
-      </div>
     </div>
     </div>
   </main>

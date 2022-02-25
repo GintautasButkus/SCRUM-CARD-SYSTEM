@@ -44,12 +44,12 @@ function xmass7() {
 function right() {
 
     img.style.float = "right";
-    tekstas.setAttribute("class", "w-50 my-5")
+    tekstas.style.float = "left"
 }
 function left() {
 
     img.style.float = "left";
-    tekstas.setAttribute("class", "w-50 my-5 ms-5")
+    tekstas.style.float = "right"
 }
 
 

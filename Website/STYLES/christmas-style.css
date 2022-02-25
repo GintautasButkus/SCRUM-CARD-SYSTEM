@@ -88,6 +88,7 @@ li{
 .changing_img{
     padding: 5px;
     border-radius: 10px;
+    width: 45%;
 
 }
 
@@ -220,3 +221,19 @@ margin-right: 30px;
   .submit:hover {
       opacity: 100%;
   }
+
+  /* *************************** TEXT ********************************** */
+  #text{
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 30px;
+      font-weight: bold;
+      height: 85%;
+     background-color: rgba(255, 255, 255, 0.2);
+     resize:none;
+     border: none;
+     border-radius: 10px;
+     box-shadow: rgb(182, 181, 181) 0px 5px 15px;
+     color: rgb(255, 255, 255);
+     text-shadow: 3px 0px 8px rgba(0,0,0,0.61);
+    }
