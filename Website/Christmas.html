@@ -13,6 +13,9 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+
   <title>Christmas</title>
 </head>
 
@@ -132,33 +135,59 @@
 
         <!-- **************** RIGHT SIDE - CARD VIEW *************************** -->
 
-                <div class="col-lg-8 right-view">
-                  <div class="row frame mx-auto">
-                      <div class="col-12 atvirukas" id="atvirukas">
-
+        <div class="col-lg-8 right-view">
+          <div class="row frame mx-auto">
+            <div class="col-12 atvirukas " id="atvirukas" id="tablecontainer">
                         
-                        <img id="img-area" class="changing_img" src="IMAGES/CHRISTMAS-IMG/xmass7.png" alt="kaledos">
-                        <textarea class="col-6 left-view" style="overflow:hidden" id="text" maxlength="400" rows="11"></textarea>
-                      
-                      </div>
-
-                  </div>                  
-                
-
-
-          
-                  <div class="row mx-auto">
-                    <div class="col-12 snap-col ">
-                      <button class="snapshot" onclick=""><i class="fa fa-camera" aria-hidden="true"></i> Take a snap</button>
-                  </div>
-                </div>
+             <img id="img-area" class="changing_img" src="IMAGES/CHRISTMAS-IMG/xmass7.png" alt="kaledos">
+              <textarea class="col-6 left-view" style="overflow:hidden" id="text" maxlength="400" rows="11"></textarea>
+                                            
+            </div>
+          </div>
+          <div class="row mx-auto">
+            <div class="col-12 snap-col ">
+              <button class="snapshot downloadtable" id="btnDownload" onclick="downloadtable()"><i class="fa fa-camera" aria-hidden="true"></i> Take a snap</button>
 
             </div>
-
-
-        
+          </div>
+                            
         </div>
-    </div>
+        <!--  id="tablecontainer" -->
+        <div id="tablecontainer">
+          <table class="table table-striped table-dark">
+              <thead>
+                  <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                  </tr>
+                  <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+      <button id="demo" class="downloadtable" onclick="downloadtable()"> Download Table</button>
+      </div>
     </div>
   </main>
 
@@ -180,6 +209,7 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
 
+    <script src="SCRIPTS/html2canvas.js"></script>
   <script src="SCRIPTS/christmas-script.js"></script>
 </body>
 
