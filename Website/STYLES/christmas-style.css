@@ -237,3 +237,27 @@ margin-right: 30px;
      color: rgb(255, 255, 255);
      text-shadow: 3px 0px 8px rgba(0,0,0,0.61);
     }
+
+
+    /* ************ RIGHT SIDE - FOR TAKING A SNAP **************** */
+    @media print{
+        body * {
+            visibility: hidden;
+            /* height: 100%; */
+        }
+        #atvirukas, #atvirukas * {
+            visibility: visible;
+            page-break-after:always;
+        }
+        #atvirukas {
+            -webkit-print-color-adjust: exact;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        @page {
+            size: A4 landscape;
+            margin: none;
+          }   
+    }

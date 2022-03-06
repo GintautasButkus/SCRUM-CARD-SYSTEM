@@ -61,30 +61,47 @@ function changeColor() {
 
 // *************Download postcard************************************* 
 
-function downloadtable() {
+// *************Download postcard option 1 ************************************* 
 
-    var node = document.getElementById('tablecontainer');
+// function downloadtable() {
 
-    domtoimage.toPng(node)
-        .then(function (dataUrl) {
-            var img = new Image();
-            img.src = dataUrl;
-            downloadURI(dataUrl, "records.png")
-        })
-        .catch(function (error) {
-            console.error('oops, something went wrong', error);
-        });
-}
+//     var node = document.getElementById('tablecontainer');
 
-function downloadURI(uri, name) {
-    var link = document.createElement("a");
-    link.download = name;
-    link.href = uri;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    delete link;
-}
+//     domtoimage.toPng(node)
+//         .then(function (dataUrl) {
+//             var img = new Image();
+//             img.src = dataUrl;
+//             downloadURI(dataUrl, "records.png")
+//         })
+//         .catch(function (error) {
+//             console.error('oops, something went wrong', error);
+//         });
+// }
+
+// function downloadURI(uri, name) {
+//     var link = document.createElement("a");
+//     link.download = name;
+//     link.href = uri;
+//     document.body.appendChild(link);
+//     link.click();
+//     document.body.removeChild(link);
+//     delete link;
+// }
+
+
+// *************Download postcard option 2 ************************************* 
+
+$("#btnConvert").on('click', function () {
+    html2canvas(document.getElementById("html-content-holder")).then(function (canvas) {                   
+       var anchorTag = document.createElement("a");
+        document.body.appendChild(anchorTag);
+        document.getElementById("previewImg");
+        anchorTag.download = "filename.jpg";
+        anchorTag.href = canvas.toDataURL();
+        anchorTag.target = '_blank';
+        anchorTag.click();
+    });
+});
 
 
 
