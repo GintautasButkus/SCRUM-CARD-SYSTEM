@@ -164,6 +164,10 @@ li{
     background: radial-gradient(circle, rgba(41,41,41,1) 36%, rgba(104,104,104,1) 46%, rgba(174,174,174,1) 66%, rgba(216,216,216,1) 83%, rgba(255,255,255,1) 100%);
 }
 
+.atvirukas{
+    height: 100%;
+}
+
 .left-view{
 display: box;
 float: right;
@@ -228,6 +232,7 @@ margin-right: 30px;
       font-family: 'Great Vibes', cursive;
       font-size: 30px;
       font-weight: bold;
+      width: 40%;
       height: 85%;
      background-color: rgba(255, 255, 255, 0.2);
      resize:none;
