@@ -127,7 +127,7 @@ li{
 /* ************ POSITION **************************************** */
 
 .position{
-    width: 200px;
+    width: 25vh;
     font-size: 25px;
     border: none;
     border-radius: 12px;
@@ -152,8 +152,19 @@ li{
 
 .apply{
     width: 120px;
-    height: 30px;
+    height: 40px;
     font-size: 16px;
+}
+
+#apply{
+    width: 100px;
+    height: 35px;
+    font-size: 16px;
+    border: none;
+}
+
+#apply:hover{
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
 }
 
 
@@ -228,6 +239,7 @@ margin-right: 30px;
 
   /* *************************** TEXT ********************************** */
   #text{
+      margin-left: 30px;
       text-align: center;
       font-family: 'Great Vibes', cursive;
       font-size: 30px;
