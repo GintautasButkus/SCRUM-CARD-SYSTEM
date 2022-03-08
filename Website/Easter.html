@@ -1,32 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Easter</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="STYLES/easter-style.css">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script> -->
+
+  <title>Easter</title>
 </head>
 
 <body>
-    <header>
-        <h1>Easter</h1>
-        <ul>
-            <li> <a href="index.html">Home Page</a></li>
-            <li> <a href="Christmas.html">Christmas</a></li>
-            <li> <a href="Birthday.html">Birthday</a></li>
-            <li> <a href="Vacation.html">Vacation</a></li>
-        </ul>
-    </header>
-    <main>  
-        <img id="img-area" class="changing_img" src="IMAGES/velykos1.jfif" alt="velykos">
-        <div class="button-area">
-            <button onclick="velykosVienas()">1</button>
-            <button onclick="velykosDu()">2</button>
-            <button onclick="velykosTrys()">3</button>
+  <!-- ********* NAVBAR ************** -->
+  <div class="container-fluid navigation ">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active mx-2">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item active mx-2">
+                <a class="nav-link" href="Christmas.html">Christmas</a>
+              </li>
+              <li class="nav-item active mx-2">
+                <a class="nav-link" href="Easter.html">Easter</a>
+              </li>
+              <li class="nav-item active mx-2">
+                <a class="nav-link" href="#">Birthday</a>
+              </li>
+              <li class="nav-item active mx-2">
+                <a class="nav-link" href="#">Holiday</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    
-        <script src="script.js"></script>    
-    </main>
+    </nav>
+  </div>
+
+
+  <!-- <main class="main-row"> -->
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <!-- <div class="col-lg-4 col-md-12 col-sm-12 left"> -->
+          <div class="col-lg-4 col-md-12 col-sm-12 left button-area">
+            <hr>
+            <p><i class="fa fa-picture-o" aria-hidden="true"></i> Select decoration</p>
+            <!-- ***** DECORATIONS ******* -->
+            <div class="row deco-row">
+              <div class="button-deco col-3">
+                <button onclick="easterNone()">none</button>
+              </div>
+              <div class="button-deco col-3">
+                <button class="easterButtonOne" onclick="easter1()"></button>
+              </div>
+              <div class="button-deco col-3">
+                <button class="easterButtonTwo" onclick="easter2()"></button>
+              </div>
+              <div class="button-deco col-3">
+                <button class="easterButtonThree" onclick="easter3()"></button>
+              </div>
+            </div>
+            <div class="row deco-row">
+              <div class="button-deco col-3">
+                <button class="easterButtonSeven" onclick="easter7()"></button>
+              </div>
+              <div class="button-deco col-3">
+                <button class="easterButtonSix" onclick="easter6()"></button>
+              </div>
+              <div class="button-deco col-3">
+                <button class="easterButtonFive" onclick="easter5()"></button>
+              </div>
+              <div class="button-deco col-3">
+                <button class="easterButtonFour" onclick="easter4()"></button>
+              </div>
+            </div>
+
+
+            <!-- ********* SELECT OWN DECORATION *************** -->
+            <div class="row deco-row">
+              <hr>
+              <p><i class="fa fa-picture-o" aria-hidden="true"></i> Select your own decoration</p>
+              <div class="col-7">
+                <input class="form-control form-control-sm" id="formFileSm" type="file" onchange="previewFile()">
+              </div>
+              <div class="col-5">
+                <button type="button" value="Apply" id="apply" class="submit">Apply</button>
+              </div>
+            </div>
+
+
+            <!-- *********** POSITION *************** -->
+            <div class="button-area">
+              <hr>
+              <p><i class="fa fa-sliders" aria-hidden="true"></i> Decoration position</p>
+              <div class="row deco-row">
+                <div class="col-6">
+                  <button class="position" onclick="left()"><i class="fa fa-align-left" aria-hidden="true"></i></button>
+                </div>
+                <div class="col-6">
+                  <button class="position" onclick="right()"><i class="fa fa-align-right"
+                      aria-hidden="true"></i></button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- ********** BACKGROUND *************** -->
+            <div class="button-area color ">
+              <hr>
+              <p><i class="fa fa-paint-brush" aria-hidden="true"></i> Background</p>
+              <div class="row ">
+                <div class="col-6 pb-2">
+                  <input class="position palette colors" type="color" id="colorInputColor" name="favcolor"
+                    value="#ff0000">
+                </div>
+                <div class="col-6">
+                  <input class="position palette background" type="button" id="colorButton" value="Change Color"
+                    onclick="changeColor()">
+                </div>
+                <hr>
+              </div>
+            </div>
+          </div>
+        
+
+        <!-- **************** RIGHT SIDE - CARD VIEW *************************** -->
+
+        <div class="col-lg-8 col-md-12 col-sm-12 right-view">
+          <div class="row frame mx-auto">
+            <div class="col-12 atvirukas " id="atvirukas">
+                        
+             <img id="img-area" class="changing_img mt-5" src="IMAGES/EASTER-IMG/5.png" alt="kaledos">
+             <div class="col-6 float-end" id="text-div" >
+               <textarea style="overflow:hidden" id="text" rows="10" ></textarea>
+             </div>
+              
+                                            
+            </div>
+          </div>
+          <div class="row mx-auto">
+            <div class="col-12 snap-col ">
+              <button class="snapshot downloadtable" id="btnDownload" onclick="window.print()"><i class="fa fa-camera" aria-hidden="true"></i> Take a snap</button>
+
+            </div>
+          </div>                          
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <!-- Javascript for user upload image -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+  <script src="SCRIPTS/easter-script.js"></script>
 </body>
+
 </html>
