@@ -24,10 +24,6 @@
 }
 
 /* ******** MAIN ROW ************** */
-.main-row{
-    height: 100%;
-}
-
 html, body{
     height: 96.22%; 
     margin: 0; 
@@ -89,12 +85,10 @@ li{
     padding: 5px;
     border-radius: 10px;
     width: 45%;
-
 }
 
 .button-area{
     text-align: left;
-    margin: 5px;
 }
 
 .button-area p{
@@ -105,9 +99,9 @@ li{
 }
 
 .button-deco button{
-    width: 90px;
-    height: 90px;
-    padding: 4px;
+    width: 4.7rem;
+    height: 4.7rem;
+    margin: 4px;
     border-radius: 12px;
     border: none;
     opacity: 0.7;    
@@ -120,15 +114,27 @@ li{
 }
 
 .deco-row{
-    height: 100px;
-    padding-bottom: 50px;
+    width: 100%;
 }
 
+/* ************ OWN DECORATION *********************************** */
+.apply{
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#apply{
+    width: 70%;
+    height: 35px;
+    font-size: 16px;
+    border: none;
+}
 /* ************ POSITION **************************************** */
 
 .position{
-    width: 25vh;
-    font-size: 25px;
+    width: 80%;
+    font-size: 23px;
     border: none;
     border-radius: 12px;
     color: rgb(41, 41, 41);
@@ -142,25 +148,13 @@ li{
 
 /* ******* BACKGROUND COLOR *********************************** */
 .palette{
-    height: 40px;
-    font-size: 18px;
+    height: 38px;
+    width: 70%;
+    font-size: 16px;
 }
 
 .colors{
     background: none;
-}
-
-.apply{
-    width: 120px;
-    height: 40px;
-    font-size: 16px;
-}
-
-#apply{
-    width: 100px;
-    height: 35px;
-    font-size: 16px;
-    border: none;
 }
 
 #apply:hover{
@@ -180,11 +174,10 @@ li{
 }
 
 .left-view{
-display: box;
-float: right;
-margin-top: 48px;
-margin-right: 30px;
-
+    display: box;
+    float: right;
+    margin-top: 48px;
+    margin-right: 30px;
 }
 
 .frame{
@@ -221,7 +214,6 @@ margin-right: 30px;
     background: rgb(1, 67, 110);
 }
 
-
 .myButton {
     color: black;
     background-color: white;
@@ -239,28 +231,31 @@ margin-right: 30px;
 
   /* *************************** TEXT ********************************** */
   #text{
-      margin-left: 30px;
+      margin-left: 1.5rem;
       text-align: center;
       font-family: 'Great Vibes', cursive;
-      font-size: 30px;
       font-weight: bold;
-      width: 40%;
-      height: 85%;
-     background-color: rgba(255, 255, 255, 0.2);
-     resize:none;
-     border: none;
-     border-radius: 10px;
-     box-shadow: rgb(182, 181, 181) 0px 5px 15px;
-     color: rgb(255, 255, 255);
-     text-shadow: 3px 0px 8px rgba(0,0,0,0.61);
+      width: 75%;
+      height:100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        resize:none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: rgb(182, 181, 181) 0px 5px 15px;
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 0px 8px rgba(0,0,0,0.61);
     }
 
+    #text-div{
+        height: 80%;
+        margin-top: 5vh;
+        font-size: 2vw;
+    }
 
     /* ************ RIGHT SIDE - FOR TAKING A SNAP **************** */
     @media print{
         body * {
             visibility: hidden;
-            /* height: 100%; */
         }
         #atvirukas, #atvirukas * {
             visibility: visible;

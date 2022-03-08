@@ -1,7 +1,7 @@
 var img = document.getElementById("img-area");
 var backgroundIm = document.getElementById("atvirukas");
 var fonas = document.getElementById("fonas");
-var tekstas = document.getElementById("text");
+var tekstas = document.getElementById("text-div");
 
 // *************IMAGE*****************************************
 function xmassNone() {
