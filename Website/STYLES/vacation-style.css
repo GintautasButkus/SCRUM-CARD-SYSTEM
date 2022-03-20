@@ -1,0 +1,275 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* ******** NAVBAR******** */
+.nav-link{
+   max-width: 100%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+   color: rgb(223, 223, 223) !important;
+   font-size: 14px;
+}
+
+.navigation{
+    position: relative;
+    left: 0;
+    background: rgb(95,8,152);
+    background: linear-gradient(90deg, rgba(95,8,152,1) 0%, rgba(87,87,241,1) 65%, rgba(7,216,255,1) 91%);  
+    text-decoration: none;
+    color: white;
+}
+
+/*  ****** LEFT MENU ************** */
+.left{
+    background-color: rgb(41, 41, 41);
+    max-height: 100%;
+}
+
+/* ******** MAIN ROW ************** */
+html, body{
+    height: 96.22%; 
+    margin: 0; 
+    padding: 0;
+}
+
+/* ******* DECORATIONS ********************* */
+
+.vacationButtonOne{
+    display: block;
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/VACATION-IMG/Vacation-Free-PNG-Image.png); 
+}
+.vacationButtonTwo{
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/VACATION-IMG/Vacation-img.png);
+}
+.vacationButtonThree{
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/VACATION-IMG/Vacation-PNG-Clipart.png);
+}
+.vacationButtonFour{
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/VACATION-IMG/Vacation-chill.png);
+}
+.vacationButtonFive{
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/VACATION-IMG/VacationLogo.png);
+}
+.vacationButtonSix{
+    height: 40px;
+    width: 60px;
+    background-size: cover;
+    background-image: url(../IMAGES/VACATION-IMG/VacationDuck.png);
+}
+
+.vacationButtonSeven{
+    height: 40px;
+    width: 60px;
+    background-size: contain;
+    background-image: url(../IMAGES/VACATION-IMG/Vacation-Aligator.png);
+}
+
+li{
+    list-style: none;
+}
+
+.changing_img{
+    padding: 5px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.button-area{
+    text-align: left;
+}
+
+.button-area p{
+    color: #d6d6d6;
+}
+.button-area hr{
+    color: #d6d6d6; 
+}
+
+.button-deco button{
+    width: 4.7rem;
+    height: 4.7rem;
+    margin: 4px;
+    border-radius: 12px;
+    border: none;
+    opacity: 0.7;    
+}
+
+.button-deco button:hover{
+    opacity: 1;
+    box-shadow: rgba(221, 221, 221, 0.35) 0px 5px 15px;
+    border: solid rgb(82, 82, 82) 2px;
+}
+
+.deco-row{
+    width: 100%;
+}
+
+/* ************ OWN DECORATION *********************************** */
+.apply{
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#apply{
+    width: 70%;
+    height: 35px;
+    font-size: 16px;
+    border: none;
+}
+/* ************ POSITION **************************************** */
+
+.position{
+    width: 80%;
+    font-size: 23px;
+    border: none;
+    border-radius: 12px;
+    color: rgb(41, 41, 41);
+    opacity: 0.7;
+}
+
+.position:hover{
+    opacity: 1;
+    box-shadow: rgba(221, 221, 221, 0.35) 0px 5px 15px;
+}
+
+/* ******* BACKGROUND COLOR *********************************** */
+.palette{
+    height: 38px;
+    width: 70%;
+    font-size: 16px;
+}
+
+.colors{
+    background: none;
+}
+
+#apply:hover{
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
+}
+
+
+/* ************ RIGHT SIDE - CARD VIEW **************** */
+.right-view{
+    padding-top: 20px;
+    background: rgb(41,41,41);
+    background: radial-gradient(circle, rgba(41,41,41,1) 36%, rgba(104,104,104,1) 46%, rgba(174,174,174,1) 66%, rgba(216,216,216,1) 83%, rgba(255,255,255,1) 100%);
+}
+
+.atvirukas{
+    height: 100%;
+}
+
+.left-view{
+    display: box;
+    float: right;
+    margin-top: 48px;
+    margin-right: 30px;
+}
+
+.frame{
+    height: 90%;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 200px;
+    
+}
+.snap-col{
+    display: flex;
+    justify-content: center;
+}
+
+.snapshot{
+    width: 92.75%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 7px;
+    border:none;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    background: rgb(3, 122, 202);
+}
+
+.snapshot:hover{
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
+}
+
+.snapshot:active{
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 5px 15px;
+    color: grey;
+    background: rgb(1, 67, 110);
+}
+
+.myButton {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+  }
+  
+  .submit {
+      border-radius: 10px;
+      opacity: 70%;
+  }
+  .submit:hover {
+      opacity: 100%;
+  }
+
+  /* *************************** TEXT ********************************** */
+  #text{
+      margin-left: 1.5rem;
+      text-align: center;
+      font-family: 'Great Vibes', cursive;
+      font-weight: bold;
+      width: 75%;
+      height:100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        resize:none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: rgb(182, 181, 181) 0px 5px 15px;
+        color: rgb(255, 255, 255);
+        text-shadow: 3px 0px 8px rgba(0,0,0,0.61);
+    }
+
+    #text-div{
+        height: 80%;
+        margin-top: 5vh;
+        font-size: 2vw;
+    }
+
+    /* ************ RIGHT SIDE - FOR TAKING A SNAP **************** */
+    @media print{
+        body * {
+            visibility: hidden;
+        }
+        #atvirukas, #atvirukas * {
+            visibility: visible;
+            page-break-after:always;
+        }
+        #atvirukas {
+            -webkit-print-color-adjust: exact;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        @page {
+            size: A4 landscape;
+            margin: none;
+          }   
+    }
