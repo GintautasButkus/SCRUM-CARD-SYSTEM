@@ -107,6 +107,11 @@ $("#btnConvert").on('click', function () {
 
 // Christmas own decoration
 
+// function previewFile(){
+//     var img_url = document.getElementById("img-area").value;
+//     document.getElementsByTagName("formFileSm")[0].style.backgroundImage = "url('"+img_url+"')";
+//     }
+
 
 
 function previewFile() {
@@ -120,6 +125,6 @@ function previewFile() {
     }, false);
 
     if (file) {
-        reader.readAsDataURL(file);
+       preview.style.backgroundImage = reader.readAsDataURL(file);
     }
 }
